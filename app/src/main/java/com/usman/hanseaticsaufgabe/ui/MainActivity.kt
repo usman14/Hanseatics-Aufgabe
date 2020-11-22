@@ -6,7 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.usman.hanseaticsaufgabe.adapter.Adapter
 import com.usman.hanseaticsaufgabe.repository.AppRepository
 import com.usman.hanseaticsaufgabe.util.Resource
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun init() {
         recyclerView.setHasFixedSize(true)
-        recyclerView.layoutManager = GridLayoutManager(this, 3, GridLayoutManager.VERTICAL, false)
+        recyclerView.layoutManager = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
         setupViewModel()
     }
 

@@ -15,7 +15,7 @@ class Adapter(private val list: List<MovieResponseItem>) : RecyclerView.Adapter<
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ImagesViewHolder(
         LayoutInflater.from(parent.context).inflate(
-            R.layout.item_simple_grid,
+            R.layout.item_staggered_grid,
             parent,
             false
         )
